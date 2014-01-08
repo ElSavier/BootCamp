@@ -1,4 +1,4 @@
-w = read.table('1999_01_19', header=FALSE, comment.char ="#", sep = "\t")
+	w = read.table('1999_01_19', header=FALSE, comment.char ="#", sep = "\t")
 w
 summary(w)
 #whatever may come
@@ -14,4 +14,5 @@ names(w) <- hd
 
 par(mfrow = c(2, 2))
 plot(w$Time, w[, "WindSp [knots]"], type = "b", xlab =  "Time", ylab = "Wind speed\")
+plot(w$Time, w[, "Temp [degC]"], type = "b", xlab = "Time", ylab = "Temp")
 
